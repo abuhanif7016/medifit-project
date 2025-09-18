@@ -102,3 +102,45 @@ body{
     margin-bottom: 25px;
     letter-spacing: 1px;
 }
+
+.header-items p{
+    font-size: 16px;
+    margin-bottom: 22px;
+    font-family: serif;
+    color: #000000cb;
+}
+
+.header-items button{
+    padding: 2px 12px;
+    font-size: 15px;
+    background-color: rgb(84, 49, 4);
+    color: whitesmoke;
+    border: 2px solid black;
+    border-radius: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 600; 
+      
+}
+
+.header-items button:hover{
+    background-color: rgb(2, 130, 177);
+    border: 2px solid black;
+    color: whitesmoke;
+}
+
+.header-items img{
+    vertical-align: middle;
+    margin: 10px;
+    height: auto;
+    width: 25px;
+    
+}
+
+.header-image{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 55px;
+    
+}
