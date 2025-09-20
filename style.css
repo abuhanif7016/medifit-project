@@ -83,7 +83,7 @@ body{
     background-color: rgba(221, 202, 176, 0.748);
     height: 90vh;
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-top: 25px;
 }
@@ -110,8 +110,7 @@ body{
     color: #000000cb;
 }
 
-.header-items button{
-    padding: 2px 12px;
+.shop{
     font-size: 15px;
     background-color: rgb(84, 49, 4);
     color: whitesmoke;
@@ -120,11 +119,12 @@ body{
     cursor: pointer;
     transition: 0.3s;
     font-weight: 600; 
+    padding-right:10px ;
       
 }
 
 .header-items button:hover{
-    background-color: rgb(2, 130, 177);
+    background-color: rgb(93, 124, 135);
     border: 2px solid black;
     color: whitesmoke;
 }
@@ -137,10 +137,26 @@ body{
     
 }
 
-.header-image{
+.image{
     display: flex;
     justify-content: center;
     align-items: center;
     margin-left: 55px;
-    
+  }
+
+.image img{
+    height: auto;
+    width: 500px;
+}
+
+/* Shop by catagory section style */
+
+.catagory{
+margin: 50px 0px;
+text-align: center;
+font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+}
+
+.catagory h1{
+    font-size: 27px;
 }
