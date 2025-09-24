@@ -115,7 +115,7 @@ body{
     background-color: rgb(84, 49, 4);
     color: whitesmoke;
     border: 2px solid rgb(84, 49, 4);
-    border-radius: 18px;
+    border-radius: 9px;
     cursor: pointer;
     transition: 0.3s;
     font-weight: 600; 
@@ -131,7 +131,7 @@ body{
 
 .header-items img{
     vertical-align: middle;
-    margin: 10px;
+    margin:2px;
     height: auto;
     width: 25px;
     
@@ -381,6 +381,7 @@ button:hover{
     justify-content: center;
     color: #663102;
     font-size: 20px;
+    align-items: center;
 }
 
 .main-happy h1{
@@ -394,7 +395,8 @@ button:hover{
     background-color: #ffffff;
     max-width: auto;
     height: 200px;
-    margin: 50px 100px 50px 100px;
+    width: 80rem;
+    margin: 20px 100px 50px 100px;
     padding: 5%;
     color: #555555d8;
     border-radius: 10px;
@@ -412,12 +414,12 @@ button:hover{
     margin-right: 10px;
 }
 
-
+/* profile section style  */
 .profile{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 90px;
     flex-wrap: wrap;
 }
 
@@ -454,4 +456,171 @@ button:hover{
     padding-top: 40px;
     padding-left: 130px;
     color: #494949cc;
+}
+
+
+
+/* footer section style  */
+
+.main-footer{
+    background-color: #f8e6abb3;
+    margin-top: 70px;
+    padding: 40px 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgb(27, 31, 34);
+}
+
+.main-div{
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: auto;
+    align-items: center;
+    text-align: center;
+}
+
+.Pages h4{
+    margin-bottom: 23px;
+    color: #5f2f05;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+.Pages ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.Pages ul li{
+    margin-bottom: 6px;
+}
+
+.Pages ul li a{
+    color: rgba(100, 100, 100, 0.853);
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.Pages ul li a:hover{
+    text-decoration: underline;
+    color: #000000;
+    transition: 0.3s;
+}
+
+.main-logo{
+    text-align: center;
+}
+
+.logo1{
+    font-size: 45px;
+    font-weight: 600;
+    /* cursor: pointer; */
+    align-items: center;
+    /* text-align: center; */
+    color: rgb(84, 49, 4);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 3px;
+    display: flex;
+    gap: 6px;
+    /* padding-top: 300px; */
+    /* padding-left: 0px; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.main-logo p{
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-top: 9px;
+    margin-bottom: 12px;
+    color: rgba(103, 103, 103, 0.868);
+}
+
+.socials{
+    font-size: 22px;
+}
+
+.socials a{
+    color: #4a2402;
+    display: inline-block;
+    margin: 0 2px;
+}
+
+.socials a:hover{
+    color: #3a61fd;
+    transition: 0.3s;
+}
+
+/* .main-logo p{
+    padding-top: 15px;
+    margin-top: 100px;
+} */
+
+.main-logo h2{
+    color: rgb(84, 49, 4);
+}
+
+.bottom{
+    text-align: center;
+    /* margin: 18px; */
+    background-color: #acd3d2;
+    font-size: 16px;
+}
+
+.bottom p{
+    padding: 5px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4a2402;
+}
+
+ .bottom p a{
+    text-decoration: none;
+    color: #000000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+ }
+
+ .bottom p a:hover{
+    color: #790808;
+    text-decoration: underline;
+ }
+
+
+ /* Responsive Adjustments */
+@media (max-width: 992px) {
+  .header {
+    flex-direction: column;
+    text-align: center;
+  }
+  .header-items {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    background: #fff;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  .nav.active {
+    display: flex;
+  }
+  .navbar {
+    position: relative;
+  }
+  /* Add a hamburger */
+  .navbar::after {
+    content: "☰";
+    font-size: 1.5rem;
+    cursor: pointer;
+    position: absolute;
+    right: 20px;
+    top: 18px;
+  }
 }
